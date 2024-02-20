@@ -10,8 +10,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <Routes>
-    
+    <Routes> 
     <Route path='/' element={<>
         <Navbar setSearchQuery={setSearchQuery} />
         <Books searchQuery={searchQuery} />
