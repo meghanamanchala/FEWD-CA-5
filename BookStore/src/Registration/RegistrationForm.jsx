@@ -45,7 +45,7 @@ function RegistrationForm() {
     }
 
     if (valid) {
-      alert('Form submitted:', formData);
+      alert('Form submitted', formData);
     } else {
       setFormErrors(errors);
     }
