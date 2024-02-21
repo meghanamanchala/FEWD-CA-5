@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
+import {Link} from "react-router-dom"
 import './RegistrationForm.css';
 function RegistrationForm() {
   const [formData, setFormData] = useState({
@@ -111,6 +112,9 @@ function RegistrationForm() {
         <div className='text-center m-3'>
           <p>Have already an account ? <a className=' underline underline-offset-2' href="/Login"> Login here</a> </p>
         </div>
+        <Link to={"/"}><div  className='text-center m-3'>
+          <button>Get back to Home</button>
+        </div></Link>
       </form>
     </div>
   );

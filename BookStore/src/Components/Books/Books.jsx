@@ -29,7 +29,7 @@ console.log(filteredBooks)
     if (data) {
       const filtered = data.books.filter((book) =>
         // eslint-disable-next-line react/prop-types
-        book.title.toLowerCase().includes(searchQuery.toLowerCase())
+        book.title.toLowerCase().startsWith(searchQuery.toLowerCase())
       );
       setFilteredBooks(filtered);
     }
