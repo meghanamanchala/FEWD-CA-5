@@ -20,6 +20,9 @@ background-repeat: no-repeat;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+.book-container:hover{
+background-image: url('https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
 .bookimage{
     width: 200px;
     height: 320px;
@@ -27,6 +30,6 @@ background-repeat: no-repeat;
     border-radius: 2px;
 }
 .booktitle{
-    color: rgb(69, 64, 64);
+    color: rgb(0, 0, 0);
     font-weight: bolder;
 }
