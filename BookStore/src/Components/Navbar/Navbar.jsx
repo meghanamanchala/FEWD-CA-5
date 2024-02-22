@@ -34,7 +34,7 @@ function Navbar({ setSearchQuery }) {
       </div>
       <div>
        <Link to='/register'>
-       <button
+       <button 
           style={{
             color: "red",
             border: "2px solid black",

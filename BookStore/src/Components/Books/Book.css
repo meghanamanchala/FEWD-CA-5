@@ -12,7 +12,8 @@
     align-items: center;
     padding: 5px;
     margin: 20px;
-    background-image: url("https://w0.peakpx.com/wallpaper/294/237/HD-wallpaper-aestheticcloudssara-aestethic-aesthetic-blanco-clouds-fondo-de-pantalla-ios14-iphone.jpg");
+    background-image: url('https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+
     background-color: #ffffff;
     background-position: center;
 background-size: fit;
@@ -21,7 +22,8 @@ background-repeat: no-repeat;
     border-radius: 8px;
 }
 .book-container:hover{
-background-image: url('https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url("https://w0.peakpx.com/wallpaper/294/237/HD-wallpaper-aestheticcloudssara-aestethic-aesthetic-blanco-clouds-fondo-de-pantalla-ios14-iphone.jpg");
+
 }
 .bookimage{
     width: 200px;
@@ -29,6 +31,7 @@ background-image: url('https://images.pexels.com/photos/906150/pexels-photo-9061
     border:2px solid black;
     border-radius: 2px;
 }
+
 .booktitle{
     color: rgb(0, 0, 0);
     font-weight: bolder;
