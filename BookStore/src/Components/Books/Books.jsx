@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
-
 // Import axios library for making HTTP requests
 import axios from 'axios';
 import './Book.css';
@@ -33,7 +32,7 @@ console.log(filteredBooks);
   useEffect(() => {
     if (data) {
       const filtered = data.books.filter((book) =>
-              // Filter books whose title starts with the search query, case-insensitive
+        // Filter books whose title starts with the search query, case-insensitive
         // eslint-disable-next-line react/prop-types
         book.title.toLowerCase().startsWith(searchQuery.toLowerCase())
       );

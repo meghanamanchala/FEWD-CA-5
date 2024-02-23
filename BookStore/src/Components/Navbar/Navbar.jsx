@@ -6,7 +6,7 @@ import './Navbar.css';
 
 // eslint-disable-next-line react/prop-types
 function Navbar({ setSearchQuery }) {
-    // Function to handle changes in the search input
+  // Function to handle changes in the search input
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };

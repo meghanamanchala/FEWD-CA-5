@@ -14,7 +14,9 @@ function AllRoutes() {
     <div>
  <Routes> 
     <Route path='/' element={<>
+        {/* Rendering Navbar component and passing setSearchQuery as prop */}
         <Navbar setSearchQuery={setSearchQuery} />
+        {/* Rendering Books component and passing searchQuery as prop */}
         <Books searchQuery={searchQuery} />
     </>} /> 
     <Route path='/register' element={<div className="form"><RegistrationForm /></div>} />

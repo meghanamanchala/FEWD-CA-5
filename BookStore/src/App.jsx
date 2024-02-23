@@ -4,11 +4,11 @@ import './App.css';
 // Importing the component that contains all routes
 import AllRoutes from "./Components/Routes/AllRoutes.jsx";
 function App() {
-return (
-<>
+  return (
+    <>
       {/* Render AllRoutes component */}
-   <AllRoutes />
-</>
+      <AllRoutes />
+    </>
   );
 }
 
