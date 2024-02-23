@@ -8,7 +8,7 @@ import RegistrationForm from '../../Registration/RegistrationForm'
 import Info from '../Info/Info'
 
 function AllRoutes() {
-    const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <div>

@@ -1,15 +1,20 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+// Import React and Link from 'react-router-dom' library
 import {Link} from "react-router-dom"
-import './Navbar.css'
+import './Navbar.css';
+
 // eslint-disable-next-line react/prop-types
 function Navbar({ setSearchQuery }) {
+    // Function to handle changes in the search input
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
 
   return (
     <nav className="flex items-center justify-between">
+
+      {/* Logo and title */}
       <div className="flex items-center">
         <img
           className="w-10 h-10"
@@ -19,6 +24,8 @@ function Navbar({ setSearchQuery }) {
         <h2>Kalvium Books</h2>
       </div>
 
+
+      {/* Search input */}
       <div>
         <input
           className="h-8"
@@ -32,6 +39,8 @@ function Navbar({ setSearchQuery }) {
           onChange={handleSearchChange}
         />
       </div>
+
+      {/* Register button */}
       <div>
        <Link to='/register'>
        <button 
@@ -48,6 +57,8 @@ function Navbar({ setSearchQuery }) {
           Register
         </button></Link> 
       </div>
+
+      {/* Info icon */}
       <Link to='/info'>
       <div>
         

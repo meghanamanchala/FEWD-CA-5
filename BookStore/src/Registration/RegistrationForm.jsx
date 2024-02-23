@@ -1,8 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
+
+// Import Link component from 'react-router-dom' for navigation
 import {Link} from "react-router-dom"
 import './RegistrationForm.css';
+
+
+// Define the RegistrationForm component
 function RegistrationForm() {
+
+    // Define state variables using the useState hook
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,6 +19,7 @@ function RegistrationForm() {
 
   const [formErrors, setFormErrors] = useState({});
 
+   // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -20,11 +28,13 @@ function RegistrationForm() {
     });
   };
 
+  // Handle form submissio
   const handleSubmit = (e) => {
     e.preventDefault();
     let valid = true;
     const errors = {};
 
+    // Validation checks
     if (formData.name.length < 3 || formData.name.length > 30) {
       errors.name = 'Name should be between 3 and 30 characters';
       valid = false;
@@ -56,6 +66,7 @@ function RegistrationForm() {
     <div className="registration-form">
       <h2>CREATE ACCOUNT</h2>
       <form onSubmit={handleSubmit}>
+        {/* Name input field */}
         <div>
           <input
             type="text"
@@ -67,7 +78,9 @@ function RegistrationForm() {
           />
           <div className="error">{formErrors.name}</div>
         </div>
-        <div>
+
+        {/* Email input field */}
+          <div>
           <input
             type="text"
             id="email"
@@ -79,6 +92,8 @@ function RegistrationForm() {
           />
           <div className="error">{formErrors.email}</div>
         </div>
+
+        {/* Password input field */}
         <div>
           <input
             type="password"
